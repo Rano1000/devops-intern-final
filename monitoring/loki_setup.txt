@@ -1,0 +1,27 @@
+Grafana Loki Setup
+
+1. Pull the Loki image:
+
+docker pull grafana/loki:latest
+
+2. Run Loki locally:
+
+docker run -d --name loki \
+-p 3100:3100 \
+grafana/loki:latest
+
+3. Verify Loki is running:
+
+docker ps
+
+4. View container logs:
+
+docker logs loki
+
+5. Stop Loki:
+
+docker stop loki
+
+6. Remove Loki:
+
+docker rm loki
